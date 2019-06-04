@@ -1,9 +1,12 @@
 import 'react-app-polyfill/ie11';
 import 'react-app-polyfill/stable';
-import React, {useState, useEffect} from 'react';
+import React, {useState, useEffect, Component} from 'react';
 import logo from './logo.svg';
 import './App.css';
 import QRCode from 'qrcode';
+import QrReader from './QrReader'
+
+
 
 
 function App() {
@@ -36,6 +39,8 @@ function App() {
         </a>
 
       </header>
+
+      <QrReader />
     </div>
   );
 }
